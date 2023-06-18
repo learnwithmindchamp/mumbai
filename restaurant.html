@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<title> Home-Mumbai </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+*{ margin:0;}  /*to remove the auto margin from the page- not compulsory though*/
+
+header {  background-color:blue; width:100%; height: 100px; text-align:center;} 
+
+
+.cityimg{ 
+padding:200px;
+text-align:center;
+background-image :url("mumbai.jpg");
+opacity:0.9;
+color:white;
+}
+
+.content{
+background-color:lightyellow;
+opacity:0.8;
+font-size:20px;
+border:10px solid black;
+font-family:"Times New Roman", Times, serif;
+padding:20px;
+color:brown;
+width:70%;
+margin-left:15%;
+margin-top:10px;
+text-align:center;
+}
+.wrapper{
+padding:50px;
+text-align:center;
+background-color:white;}
+
+
+nav{
+float:left;
+background:grey;
+}
+nav ul li{
+list-style-type:none;
+display: inline-block;
+}
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:20px;
+margin:20px;
+text-transform:uppercase;
+position:relative;
+}
+nav ul li a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 4px;
+  background-color: #444;
+  position: absolute;
+top: 0;
+left:0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav  a:hover::before {
+  width: 100%;
+}
+
+
+
+
+#shadow{
+text-align:center;
+margin-bottom:30px;
+font-size:40px;
+text-shadow:-10px 10px 0px #00e6e6,
+            -20px 20px 0px #01cccc,
+            -30px 30px 0px #00bdbd;
+}
+
+.food-style{
+text-align:center;
+}
+
+.food-style img{
+margin:40px;
+width:200px;
+height:150px;
+transition: width height transform 2s linear;
+
+}
+
+.food-style img:hover{
+width:500px; 
+height:300px;
+transform:rotate(-10deg)
+}
+
+
+#img-overlap {
+  position:relative;
+  height:300px;
+  width:500px;
+  margin:5%;
+ left:30%;
+}
+#img-overlap img {                                            
+  position:absolute;
+  transition: opacity 1s ease-in-out;
+}
+
+#img-overlap img.top:hover {
+  opacity:0;
+}
+
+
+footer  {
+background-color : gray; 
+width:100%; 
+height: 80px;
+text-align:center;
+font-size:20px;
+}
+
+
+</style>
+</head>
+
+<body>
+<header> 
+<h1>Mumbai</h1>
+
+<nav>
+<ul>
+<li><a href ="index.html">Home</a></li>
+<li><a href ="hotels.html">Hotels</a></li>
+<li><a href ="restaurant.html">Restaurants</a></li>
+<li><a href ="contact.html">Contact Us</a></li>
+</ul>
+
+</nav>
+</header>
+
+<main >
+
+<h2 id="shadow"> Mumbai Must Have Street Foods </h2>
+
+<div class="food-style">
+<img src="https://www.thestatesman.com/wp-content/uploads/2020/03/vada-pav-12.jpg"  > <h3> Vada Pav</h3>
+
+<img src="https://assets.gqindia.com/photos/62bbfc0be1545ee4f0cd6ca2/16:9/pass/Street%20food%20in%20Mumbai-Chaat.jpg"> <h3> Paani Puri</h3>
+</div>
+<p class="content"> The food culture of Mumbai is defined by its street food. People from all economic classes eat from the roadside food stalls in Mumbai, which serve some of the best local food, even better than many restaurants. Mumbai's most famous street food includes Vada Pav, bhelpuri, panipuri, sevpuri, Bombay sandwich, ragda-pattice, pav bhaji, omlette pav and kebabs. Among the popular desserts of Mumbai are Kulfi and Ice Gola.
+<br> <a href="https://www.holidify.com/pages/mumbai-street-food-1633.html"> Best places to have Mumbai Street Food</a> <p>
+
+<div id="img-overlap">
+ <img  class="bottom" src="https://mediavine-res.cloudinary.com/image/upload/s--VPaS9jvq--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1661296625/xiye4ych6jrn0jkwi7f6.jpg" width=500 height = 300>
+  <img class="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7dgz6VXhvFeduLusPINPXFudebExyQ5SHqQ&usqp=CAU" width = 500 height =300 >
+</div>
+
+
+
+</main>
+<footer> 
+<p> This website is made with MindChamp </p>
+<a href="https://www.incredibleindia.org/content/incredible-india-v2/en/destinations/mumbai.html" >To know more about Mumbai , click here </a>
+
+</footer>
+</body>
+</html>
+

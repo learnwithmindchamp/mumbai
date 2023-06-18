@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<title> Home-Mumbai </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+*{ margin:0;}  /*to remove the auto margin from the page- not compulsory though*/
+
+header {  background-color:blue; width:100%; height: 100px; text-align:center;} 
+
+
+.cityimg{ 
+padding:200px;
+text-align:center;
+background-image :url("mumbai.jpg");
+opacity:0.9;
+color:white;
+}
+
+.content{
+background-color:black;
+opacity:0.8;
+font-size:30px;
+border:10px solid black;
+font-family:"Times New Roman", Times, serif;
+padding:20px;
+color:white;
+}
+.wrapper{
+padding:50px;
+text-align:center;
+background-color:white;}
+
+.city-sites h2{
+margin:20px;
+font-size:30px;
+text-align:center;
+
+}
+.city-sites ul{
+list-style-type:none;
+text-align:center;
+}
+.city-sites ul h2{
+background:pink;
+font-size:25px;
+}
+.city-sites img{
+width:50%;
+}
+
+nav{
+float:left;
+background:grey;
+}
+nav ul li{
+list-style-type:none;
+display: inline-block;
+}
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:20px;
+margin:20px;
+text-transform:uppercase;
+position:relative;
+}
+nav ul li a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 4px;
+  background-color: #FFA07A;
+  position: absolute;
+top: 0;
+left:0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav  a:hover::before {
+  width: 100%;
+}
+
+
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.styled-table thead th {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.styled-table tbody td {
+  padding: 10px;
+}
+.styled-table tfoot tr td{
+padding: 10px;
+background:aquamarine;
+text-align:center;
+font-weight:bold;
+border-bottom: 2px black solid;
+}
+.styled-table tbody tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+
+
+
+
+
+footer  {
+ background-color : gray; 
+width:100%; 
+height: 80px;
+text-align:center;
+font-size:20px;
+}
+    
+</style>
+</head>
+
+<body>
+<header> 
+<h1>Mumbai</h1>
+
+<nav>
+<ul>
+<li><a href ="index.html">Home</a></li>
+<li><a href ="hotels.html">Hotels</a></li>
+<li><a href ="restaurant.html">Restaurants</a></li>
+<li><a href ="contact.html">Contact Us</a></li>
+</ul>
+
+</nav>
+</header>
+
+<main>
+<table class="styled-table">
+  <thead>
+    <tr>
+      <th>Hotel</th>
+      <th>Price</th>
+      <th>Facilities</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://r1imghtlak.mmtcdn.com/qlh0j89put6tl7pr4t3vo14f0054.jpg?&output-quality=75&output-format=jpg&downsize=821:550&crop=821:550" width=500 height = 300><h3>Meluha - The Fern</h3></td>
+      <td>Rs 5799/- per night</td>
+      <td>Roof Top Swimming Pool, Free WIFI, Powai HUB Location</td>
+    </tr>
+    <tr>
+     <td><img src="https://www.tajhotels.com/content/dam/luxury/hotels/Taj_Mahal_Mumbai/images/16x7/AAG_27642205-H1-015Pooside-16x7.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" width=500 height = 300 ><h3>The Taj Mahal Palace</h3></td>
+      <td>Rs 30000/- per night</td>
+      <td>Luxury Hotel, Roof Top Swimming Pool, Free WIFI, Arabian Sea View</td>
+    </tr>
+    <tr>
+      <td><img src="https://www.tajhotels.com/content/dam/vivanta/hotels/old-president,mumbai/new-image/image-new/president_image.PNG" width=500 height = 300><h3>President- ICHL SeleQtions</h3></td>
+      <td>Rs 5799/- per night</td>
+      <td>Roof Top Swimming Pool, Free WIFI,Cuffe Parade</td>
+    </tr>
+ <tr>
+      <td><img src="https://www.saharastar.com/admin/images_bank/bankJune2017-2.jpg" width=500 height = 300><h3>The Sahara Star</h3></td>
+      <td>Rs 10999/- per night</td>
+      <td>Roof Top Swimming Pool, Free WIFI, Near Domestic Airport Location</td>
+    </tr>
+ <tr>
+      <td><img src="https://www.theleela.com/prod/content/assets/styles/tl_500_400_webp/public/2021-05/The-Leela-Mumbai_1.jpg.webp?VersionId=NWFsPO3K50tkFr0dECJ0YI5Y.UjzChEt&itok=XIxzjbsp" width=500 height = 300><h3>The Leela</h3></td>
+      <td>Rs 13500/- per night</td>
+      <td>Salon , Spa , Wellness, Free WIFI, Near Airport Location</td>
+    </tr>
+  </tbody>
+<tfoot><tr><td colspan="3"> Have a Happy Stay in Mumbai</td></tr></tfoot>
+</table>
+
+</main>
+<footer> 
+<p> This website is made with MindChamp </p>
+<a href="https://www.incredibleindia.org/content/incredible-india-v2/en/destinations/mumbai.html" >To know more about Mumbai , click here </a>
+
+</footer>
+</body>
+</html>
+
